@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <string.h>
+
+int main (void){
+	char time[50];
+	char ven[50];
+	char per[50];
+	int vit;
+	int der;
+	int em;
+	int i;
+	int sum;
+	int sum2;
+	int sum3;		
+	printf("Nome do time: ");
+	scanf("%s", &time);
+	printf("Numero de vitorias: ");
+	scanf("%d", &vit);
+	printf("Numero de empates: ");
+	scanf("%d", &em);
+	printf("Numero de derrotas: ");
+	scanf("%d", &der);	
+	sum=3*vit+em;
+	sum3=sum;
+	sum2=sum;
+	strcpy(ven, time);
+	strcpy(per, time);
+	for (i=2; i<=20; i++){
+		printf("Nome do time: ");
+		scanf("%s", &time);
+		printf("Numero de vitorias: ");
+		scanf("%d", &vit);
+		printf("Numero de empates: ");
+		scanf("%d", &em);
+		printf("Numero de derrotas: ");
+		scanf("%d", &der);
+		sum=3*vit+em;
+		if (sum > sum2){
+			strcpy(ven, time);
+			sum2=sum;
+			}
+			else {
+				if (sum < sum3){
+					sum3=sum;
+					strcpy(per, time);
+					}					
+				
+			}
+		}
+	printf("Mais pontos: %s \n", ven);
+	printf("Menos pontos: %s \n", per);	
+	return 0;
+}
+			
+	
