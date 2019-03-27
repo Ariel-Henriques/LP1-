@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main (void){
+	float d;
+	printf("Preço do celular: ");
+	scanf("%f",&d);
+	if (d*3.17==1000){
+		printf("Bom negócio!");
+	}
+		else{
+			printf("Mal negócio!");
+		}
+	return 0;
+}
