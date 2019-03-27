@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main (void){
+	float v;
+	printf("Velocidade: ");
+	scanf("%f", &v);
+	if (v*1.6>=80 && v*1.6<=100){
+		printf ("MANTENHA");	
+		
+		}else{
+			if (v*1.6<80){
+				printf("ACELERE");								
+				}else {
+					printf("DESACELERE");
+					}
+				}
+			
+			
+	return 0;
+	}
+		
