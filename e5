@@ -1,11 +1,14 @@
 #include<stdio.h>
 
 int main (void){
-	float n;
+	float n, count;
 	n=1;
+	count=0;
 	while(n!=0){
 		printf("Numero: ");
 		scanf("%f", &n);
+		count=count+n;
 		}
+	printf("Soma: %f", count);
 	return 0;
 }
