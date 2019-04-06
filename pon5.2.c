@@ -1,5 +1,10 @@
 #include<stdio.h>
 
+int* compra(int* conta){
+     *conta=*conta-500;
+     return 0;
+     }
+     
 int main (void){
     int minha_conta;
     int* conta;
@@ -15,9 +20,10 @@ int main (void){
         }
         else{
             conta=&c2;
-            }
-    *conta=*conta-500;
+            } 
+    compra(conta);          
     printf("Conta 1: %d \nConta 2: %d \n", c1, c2);
     return 0;
  }
+        
     
