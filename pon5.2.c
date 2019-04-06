@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-int* compra(int* conta){
-     *conta=*conta-500;
+int compra(int* conta, int valor){
+     *conta=*conta-valor;
      return 0;
      }
      
@@ -21,9 +21,7 @@ int main (void){
         else{
             conta=&c2;
             } 
-    compra(conta);          
+    compra(conta, 500);          
     printf("Conta 1: %d \nConta 2: %d \n", c1, c2);
     return 0;
  }
-        
-    
