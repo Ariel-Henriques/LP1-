@@ -2,14 +2,12 @@
 
 int eh_primo(int x){
     int i;
-    char l;
     for (i=2; i<x; i++){
         if (x%i==0){
             return 0;
             }
         }
-    l=1;
-    return l;
+    return 1;
 }
 
 int main (void){
