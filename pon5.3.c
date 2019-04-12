@@ -18,7 +18,6 @@ void desconta_compra(int c1, int c2, int *vet){
 	
 
 int main (void){
-	char i;
 	int compras[5];
 	int c1, c2;
 	compras[1]=100;
