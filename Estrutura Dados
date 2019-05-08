@@ -31,6 +31,6 @@ void preenche2(struct Dados* p){
 int main (void){
 	struct Dados D;
 	preenche2(&D);
-	printf("\nNome: %s, Matricula: %d, Endereco: %s, Cor facorita: %s", D.I.nome, D.I.matricula, D.endereco, D.cor_favorita);
+	printf("\nNome: %s, Matricula: %d, Endereco: %s, Cor favorita: %s", D.I.nome, D.I.matricula, D.endereco, D.cor_favorita);
 	return 0;
 } 
