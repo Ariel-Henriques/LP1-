@@ -1,6 +1,7 @@
 #include<stdio.h>
 
 int recursao(int n){
+//retorna n+1
 	int k;
 	if(n==0){
 		return 1;
