@@ -6,7 +6,7 @@ void preenche(FILE* f){
     printf("Digite algo: ");
     scanf("%s", a);
     int b=strlen(a);
-    printf("%s", a);    
+    //printf("%s", a);    
     for(int i=0; i<b; i++){  
          //printf("%s", a);
          fputc(a[i], f);
