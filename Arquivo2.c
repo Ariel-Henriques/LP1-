@@ -9,7 +9,7 @@ void ler(FILE* f){
 }
 
 int main (void){
-	FILE* f = fopen("C:/Users/Ariel/Desktop/projeto-c/jaaj.txt" ,"r");
+	FILE* f = fopen("/home/ime/Área de Trabalho/arq.jota.txt" ,"r");
 	ler(f);
 	fclose(f);
 	return 0;
