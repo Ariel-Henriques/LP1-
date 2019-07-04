@@ -38,9 +38,11 @@ struct Caixa* removeL(struct Caixa* p, int n){
 		//free(p);
 		return(p);
 	}else{
-		return((*p).prox);
+		if(k!=){
+			return((*p).prox);
+		}else{
+			return (l);
 	}
-	
 }
 		 
 
